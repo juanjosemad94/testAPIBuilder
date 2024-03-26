@@ -21,7 +21,7 @@
       "host": {
         "cors": {
           "origins": ["https://localhost","http://localhost"],
-          "allow-credentials": false
+          "allow-credentials": true
         },
         "authentication": {
           "provider": "StaticWebApps"
