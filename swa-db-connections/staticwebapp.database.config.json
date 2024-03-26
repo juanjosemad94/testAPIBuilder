@@ -20,8 +20,8 @@
       },
       "host": {
         "cors": {
-          "origins": ["https://localhost","http://localhost"],
-          "allow-credentials": true
+          "origins": ["https://localhost"],
+          "allow-credentials": false
         },
         "authentication": {
           "provider": "StaticWebApps"
