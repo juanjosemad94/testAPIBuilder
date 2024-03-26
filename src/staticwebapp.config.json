@@ -1,7 +1,34 @@
 {
-    "globalHeaders": {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, OPTIONS",
-      "SOM-TEST": "Testing"
-    }
-  }
+	"routes": [
+		{
+			"route": "/data-api/*",
+			"headers": {
+				"Access-Control-Allow-Origin": "*",
+				"content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; connect-src '*'",
+				"SOM-TEST": "TestingDataAPI"
+			}
+		},
+		{
+			"route": "/api/*",
+			"headers": {
+				"Access-Control-Allow-Origin": "*",
+				"content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; connect-src '*'",
+				"SOM-TEST": "TestingAPI"
+			}
+		}
+		,
+		{
+			"route": "/about/*",
+			"headers": {
+				"Access-Control-Allow-Origin": "*",
+				"content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; connect-src '*'",
+				"SOM-TEST": "TestingAbout"
+			}
+		}
+	],
+	"globalHeaders": {
+		"Access-Control-Allow-Origin": "*",
+		"Access-Control-Allow-Methods": "GET, OPTIONS",
+		"SOM-TEST": "Testing"
+	}
+}
