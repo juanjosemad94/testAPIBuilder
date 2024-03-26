@@ -20,13 +20,13 @@
       },
       "host": {
         "cors": {
-          "origins": [],
+          "origins": ["https://localhost","http://localhost"],
           "allow-credentials": false
         },
         "authentication": {
           "provider": "StaticWebApps"
         },
-        "mode": "development"
+        "mode": "production"
       }
     },
     "entities": {
